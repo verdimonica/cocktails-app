@@ -1,0 +1,207 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+
+/* NAV SECTION */
+aside {
+    display:inline;
+    flex: 1;
+    background-color: #1a2b42;
+    min-width:280px;
+    /* top:0;
+    bottom:0;
+    width: 20%;
+    height: 100%; */
+}
+
+.aside-logo {
+    display:flex;
+    flex-direction: column;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+    width: 100%;
+}
+
+.aside-logo p {
+    font-size: 12px;
+}
+#aside-logo-mb {
+    display: none;
+}
+
+.aside-logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+}
+
+aside hr {
+    border-color: #4c5267;
+    margin:0;
+    padding:0;
+}
+.menu-link {
+    color:#98A4CE;
+    padding:20px 3px 20px 20px;
+    display:block;
+    text-decoration: none;
+}
+
+.menu-link:hover{
+    color: white;
+    border-left:solid 3px #363a51;
+    background-color:#363a51;
+    padding:20px 30px 20px 40px;
+    display:block;
+
+}
+
+/*
+.menu-link:active {
+    color: #67f494;
+    border-left:solid 3px #67f494;
+    background-color:#363a51;
+    padding:20px 30px 20px 17px;
+    display:block;
+}
+*/
+.active-menu-link {
+    color: #67f494;
+    border-left:solid 3px #67f494;
+    background-color:#363a51;
+    padding:20px 30px 20px 17px;
+    display:block;
+}
+
+
+.far {
+    color:#67f494;
+    padding-right:15px;
+}
+
+.fas {
+    color:#67f494;
+    padding-right:15px;
+}
+
+
+/* MAIN SECTION */
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    background-color:#98A4CE;
+}
+
+/* main {
+    display:flex;
+    background-color: #98A4CE;
+    height: 100vh;
+    float:right;
+    margin-left: 280px;
+    width: 80%;
+    position:absolute;
+    clear: both;
+} */
+
+/*HEADER SECTION*/
+
+header {
+    display: flex;
+    min-height: 50px;
+    background-color: white;
+}
+
+.top-nav_right {
+    display:flex;
+    flex:1;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.top-nav_left {
+    display:none;
+    flex: 1;
+    flex-direction: row;
+}
+
+.top-nav_right-sm {
+    display: none;
+}
+
+#burguer-menu {
+    color:#67f494;
+    padding-right:15px;
+
+}
+
+.content{
+    flex: 4;
+}
+
+footer {
+    display: flex;
+    min-height: 50px;
+    background-color:#4C5267;
+}
+
+footer p {
+    padding: 0 0 0 30px;
+    color:#98A4CE;
+}
+/* header {
+    top: 0;
+    background-color:white;
+    height: 50px;
+    width: 100%;
+    float: right;
+} */
+
+@media(max-width:660px) {
+    aside {
+        display:none;
+        overflow: auto;
+        z-index: 1;
+        width: 100%;
+    
+    
+    }
+    .aside-logo{
+        display:none;
+    }
+
+    #aside-logo-mb{
+        display: block;
+    }
+
+    header{background-color:#1a2b42;}
+
+    .top-nav_left {
+        display:flex;
+        flex: 1;
+        flex-direction: row;
+        color: white;
+        padding: 0 0 0 20px;
+    }
+
+    .top-nav_right-sm {
+        display: flex;
+    }
+    .top-nav_right {
+        display: none;
+    }
+}
+
+@media (min-width: 660px) {
+    aside {
+        display: inline !important;
+    }
+  }
