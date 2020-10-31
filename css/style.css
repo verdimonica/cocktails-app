@@ -143,6 +143,10 @@ header {
 
 }
 
+#header-image {
+    background-image: url(../img/adam-jaime-dmkmrNptMpw-unsplash\ \(1\).jpg);
+}
+
 .content{
     flex: 4;
 }
