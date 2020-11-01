@@ -26,13 +26,13 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font: 600 16px/18px 'Lato','Open Sans',sans-serif;
   margin: 0;
   background-image: url(../img/adam-jaime-dmkmrNptMpw-unsplash\ \(1\).jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  color: #0a0a0b;
+  color:#c8c8c8;
   overflow: hidden;
 }
 
@@ -96,6 +96,7 @@ a.btn {
   color: #fff;
   padding: 10px;
   border: 1px solid rgba(255,255,255,0.5);
+  border-radius:25px;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -127,7 +128,8 @@ a.btn:hover {
 
 .flex-form input[type="submit"] {
   background: #d7385080;
-  border: 1px solid #d7385080;
+  border: none;
+  border-radius:25px;
   color: #fff;
   padding: 0 30px;
   cursor: pointer;
@@ -148,6 +150,7 @@ a.btn:hover {
   position: relative;
   width: 500px;
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius:35px;
 }
 
 .flex-form > * {
@@ -250,13 +253,6 @@ footer p {
     padding: 0 0 0 30px;
     color:#98A4CE;
 }
-/* header {
-    top: 0;
-    background-color:white;
-    height: 50px;
-    width: 100%;
-    float: right;
-} */
 
 @media(max-width:660px) {
     aside {
@@ -275,7 +271,7 @@ footer p {
         display: block;
     }
 
-    header{background-color:#1a2b42;}
+    header{background-color:#c8c8c8;}
 
     .top-nav_left {
         display:flex;
@@ -298,159 +294,5 @@ footer p {
         display: inline !important;
     }
   }
-
-/*SIGNUP LOGIN SECTION*/
-
-  body{
-	margin:0JKHZ;
-	color: #56585b;
-	background:#c8c8c8;
-	font:600 16px/18px 'Open Sans',sans-serif;
-}
-*,:after,:before{box-sizing:border-box}
-.clearfix:after,.clearfix:before{content:'';display:table}
-.clearfix:after{clear:both;display:block}
-a{color:inherit;text-decoration:none}
-
-.login-wrap{
-	width:100%;
-	margin:auto;
-	max-width:525px;
-	min-height:670px;
-	position:relative;
-	background:url(../img/jenny-pace-yBz_o25M2zY-unsplash.jpg) no-repeat center;
-	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
-}
-.login-html{
-	width:100%;
-	height:100%;
-	position:absolute;
-	padding:90px 70px 50px 70px;
-	background:rgba(148, 150, 153, 0.671);
-}
-.login-html .sign-in-htm,
-.login-html .sign-up-htm{
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	position:absolute;
-	transform:rotateY(180deg);
-	backface-visibility:hidden;
-	transition:all .4s linear;
-}
-.login-html .sign-in,
-.login-html .sign-up,
-.login-form .group .check{
-	display:none;
-}
-.login-html .tab,
-.login-form .group .label,
-.login-form .group .button{
-	text-transform:uppercase;
-}
-.login-html .tab{
-	font-size:22px;
-	margin-right:15px;
-	padding-bottom:5px;
-	margin:0 15px 10px 0;
-	display:inline-block;
-	border-bottom:2px solid transparent;
-}
-.login-html .sign-in:checked + .tab,
-.login-html .sign-up:checked + .tab{
-	color:#fff;
-	border-color:#d7385080;
-}
-.login-form{
-	min-height:345px;
-	position:relative;
-	perspective:1000px;
-	transform-style:preserve-3d;
-}
-.login-form .group{
-	margin-bottom:15px;
-}
-.login-form .group .label,
-.login-form .group .input,
-.login-form .group .button{
-	width:100%;
-	color:#fff;
-	display:block;
-}
-.login-form .group .input,
-.login-form .group .button{
-	border:none;
-	padding:15px 20px;
-	border-radius:25px;
-	background:rgba(255,255,255,.1);
-}
-.login-form .group input[data-type="password"]{
-	text-security:circle;
-	-webkit-text-security:circle;
-}
-.login-form .group .label{
-	color:#aaa;
-	font-size:12px;
-}
-.login-form .group .button{
-	background:#d7385080;
-}
-.login-form .group label .icon{
-	width:15px;
-	height:15px;
-	border-radius:2px;
-	position:relative;
-	display:inline-block;
-	background:rgba(255,255,255,.1);
-}
-.login-form .group label .icon:before,
-.login-form .group label .icon:after{
-	content:'';
-	width:10px;
-	height:2px;
-	background:#fff;
-	position:absolute;
-	transition:all .2s ease-in-out 0s;
-}
-.login-form .group label .icon:before{
-	left:3px;
-	width:5px;
-	bottom:6px;
-	transform:scale(0) rotate(0);
-}
-.login-form .group label .icon:after{
-	top:6px;
-	right:0;
-	transform:scale(0) rotate(0);
-}
-.login-form .group .check:checked + label{
-	color:#fff;
-}
-.login-form .group .check:checked + label .icon{
-	background:#d7385080;
-}
-.login-form .group .check:checked + label .icon:before{
-	transform:scale(1) rotate(45deg);
-}
-.login-form .group .check:checked + label .icon:after{
-	transform:scale(1) rotate(-45deg);
-}
-.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
-	transform:rotate(0);
-}
-.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
-	transform:rotate(0);
-}
-
-.hr{
-	height:2px;
-	margin:60px 0 50px 0;
-	background:rgba(255,255,255,.2);
-}
-.foot-lnk{
-	text-align:center;
-}
-
 /*ABOUT US SECTION*/
 
