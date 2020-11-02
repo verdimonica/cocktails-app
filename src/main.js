@@ -4,7 +4,7 @@ function searchByName(cocktailName) {
         .then(response => response.json() )
         .then(data => console.log('Success:', data) );
 }
-console.log(searchByName("alexander"))
+
 
 //SEARCH BY ID
 function searchById(cocktailId) {
@@ -12,7 +12,7 @@ function searchById(cocktailId) {
         .then(response => response.json() )
         .then(data => console.log('Success:', data) );
 }
-console.log(searchById("11118"))
+
 
 //THE MOST POPULAR LIST
 function topTenList() {
@@ -20,4 +20,3 @@ function topTenList() {
         .then(response => response.json() )
         .then(data => console.log('Success:', data) );
 }
-console.log(topTenList())
