@@ -5,7 +5,7 @@ document
       if (event.key !="Enter") {
         cocktailName = cocktailName + event.key
       }else {
-        console.log(cocktailName)
+        event.preventDefault()
           searchByName(cocktailName)
           cocktailName = ""
       }
