@@ -2,6 +2,7 @@
 
 body{
 	margin:0JKHZ;
+	height: 100%;
 	color: #56585b;
 	background:#c8c8c8;
 	font:600 16px/18px 'Lato','Open Sans',sans-serif;
@@ -11,13 +12,15 @@ body{
 .clearfix:after{clear:both;display:block}
 a{color:inherit;text-decoration:none}
 
+main{
+	height: 100%;
+}
 .login-wrap{
 	width:100%;
 	margin:auto;
 	max-width:525px;
 	min-height:670px;
 	position:relative;
-	background:url(../img/jenny-pace-yBz_o25M2zY-unsplash.jpg) no-repeat center;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 .login-html{
@@ -25,7 +28,7 @@ a{color:inherit;text-decoration:none}
 	height:100%;
 	position:absolute;
 	padding:90px 70px 50px 70px;
-	background:rgba(148, 150, 153, 0.671);
+	background:rgba(238, 231, 237, 0.37);
 }
 .login-html .sign-in-htm,
 .login-html .sign-up-htm{
@@ -149,4 +152,10 @@ a{color:inherit;text-decoration:none}
 }
 .foot-lnk{
 	text-align:center;
+}
+.background-gradient{
+	background:
+	linear-gradient(
+	  rgba(255, 0, 0, 0.336), 
+	  rgba(48, 42, 42, 0.205));
 }

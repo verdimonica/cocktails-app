@@ -124,7 +124,7 @@ a.btn:hover {
     rgba(255, 0, 0, 0.336), 
     rgba(48, 42, 42, 0.205)
   ),
-  url(../img/jenny-pace-yBz_o25M2zY-unsplash.jpg) no-repeat center;
+  url(../img/kyryll-ushakov-lwoTuByIuC4-unsplash.jpg) no-repeat center;
 
 }
 
@@ -196,8 +196,10 @@ input[type="search"] {
 }
 
 #search-bar {
-  border-radius: 5%;
+  border-radius: 100px;
   margin-right: 2%;
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  color: #444444f3;
 }
 .shadow {
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);

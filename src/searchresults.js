@@ -3,14 +3,23 @@ document
   .getElementById("search-bar")
   .addEventListener('keypress', (event) => {
       if (event.key !="Enter") {
-        cocktailName = cocktailName + event.key
+        cocktailName = event.target.value
       }else {
         event.preventDefault()
-          searchByName(cocktailName)
-          cocktailName = ""
-          document.getElementById("search-bar").value = ''
+        searchByName(cocktailName)
+        cocktailName = ""
+        document.getElementById("search-bar").value = ''
       }
   })
+
+document
+  .getElementById("search-button")
+  .addEventListener("click", (event) =>{
+    cocktailName = document.getElementById("search-bar").value
+    event.preventDefault()
+    searchByName(cocktailName)
+  })
+
 function searchByName(cocktailName) {
     let url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + cocktailName
     console.log(url)
@@ -97,7 +106,7 @@ var cocktails=[
             '</a>'+
             '<div>'+
               '<h3>'+cocktails[i].strDrink+'</h3>'+
-              '<p>'+cocktails[i].strInstructions+'</p>'+
+              '<p class="description" >'+cocktails[i].strInstructions+'</p>'+
             '</div>'+
             '<div>'+
               '<a class="button" href="" data-obj="'+i+'">Explore</a>'+

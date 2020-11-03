@@ -7,7 +7,6 @@
   
   #search-results {
     font-family: 'Lato', 'Open Sans', sans-serif;
-    /*background: #FFCC80;*/
     color: #444444f3;
   }
   
@@ -67,6 +66,11 @@
   .button:hover {
     opacity: .7;
   }
+
+  .description {
+    font-weight: lighter;
+  }
+  
   
   /* Page */
   .modal,
