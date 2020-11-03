@@ -8,7 +8,7 @@ document
         event.preventDefault()
           searchByName(cocktailName)
           cocktailName = ""
-          document.getElementById("search-bar").value = ''
+          document.getElementById("search-bar").value = 'git '
       }
      
   })
