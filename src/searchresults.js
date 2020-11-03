@@ -8,6 +8,7 @@ document
         event.preventDefault()
           searchByName(cocktailName)
           cocktailName = ""
+          document.getElementById("search-bar").value = ''
       }
      
   })
