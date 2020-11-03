@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+​
 <html>
     <head>
         <meta charset="utf-8">
@@ -10,19 +10,20 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/searchresults.css">
     </head>
-    <body>
+    <body class="flex-column">
+      <main class="flex-column occupy-space">
         <!--LANDING-->
-      <div class="container">
-
+      <div class="hero container occupy-space flex-column">
+​
             <header>
-              <h2><a href="#"><i class="ion-plane"></i> MIX IT UP</a></h2>
+              <h2><a href="#"><i class="Brand"></i> MIX IT UP</a></h2>
               <nav>
                 <ul>
                   <li>
-                    <a href="#" title="Hotels">Catalogue</a>
+                    <a href="#" title="Catalogue">Catalogue</a>
                   </li>
                   <li>
-                    <a href="#" title="Flights">About us</a>
+                    <a href="#" title="About us">About us</a>
                   </li>
                   <li>
                     <a class="btn" href="#" title="Register / Log In">Signup/Log In</a>
@@ -31,10 +32,10 @@
               </nav>
             </header>
           
-            <div class="cover">
+            <div class="cover  occupy-space">
               <h1>Discover new flavors</h1>
               <form  class="flex-form">
-                <input id="search-bar" class="shadow" type="search" placeholder="What's your favorite ingredient?">
+                <input id="search-bar" class="shadow" type="search" placeholder="Cocktail name">
                 <input id="search-button" class="shadow" type="submit" value="Search">
               </form>
               <div id="madeby">
@@ -45,12 +46,12 @@
             </div>
           
       </div>
-      <div id="search-results" class="container">
+      <div id="search-results" class="container occupy-space">
       <!-- Thumbs -->
         <ul class="posts-box">
         <!-- JSON Here! -->
         </ul>
-
+​
         <!-- Modal -->
       <div class="modal" id="modal-name">
         <div class="modal-sandbox"></div>
@@ -67,16 +68,12 @@
           </div>
         </div>
       </div>
-
+​
       </div>
     </main>    
-    <footer>
-
-    </footer>
-      
         <script src="" async defer></script>
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <script src="./src/main.js"></script>
         <script src="./src/searchresults.js"></script>
   </body>
-</html>                      
+</html>                         

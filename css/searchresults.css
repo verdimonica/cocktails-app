@@ -6,9 +6,9 @@
   }
   
   #search-results {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', 'Open Sans', sans-serif;
     /*background: #FFCC80;*/
-    color: #444444;
+    color: #444444f3;
   }
   
   /* Cards */
@@ -58,7 +58,7 @@
   }
   
   .button {
-    color: #FFC107;
+    color: #d7385180;
     text-transform: uppercase;
     text-decoration: none;
     font-size: .8em;
@@ -90,7 +90,7 @@
     height: 100%;
     left: 0;
     top: 0;
-    background: #FFB74D;
+    background: #d738506c;
     overflow: auto;
   }
   
@@ -153,9 +153,9 @@
     margin: 24px 8px 0 0;
     background: transparent;
     text-decoration: none;
-    border: 1px solid #FFC107;
+    border: 1px solid #d7385180;
     outline: none;
-    color: #FFC107;
+    color: #360c1280;
     cursor: pointer;
   }
   
