@@ -8,8 +8,13 @@
   #search-results {
     font-family: 'Lato', 'Open Sans', sans-serif;
     color: #444444f3;
+   /* display: none;*/
   }
   
+  .no-display {
+    display: none;
+  }
+
   /* Cards */
   .posts-box {
     max-width: 1024px;

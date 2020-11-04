@@ -89,7 +89,7 @@ var cocktails=[
   */
   //Loop length:
   function displayThumbs(cocktails){
-      console.log("patati")
+    $("#search-results").removeClass("no-display")
     //Empty container:
     $(".posts-box").empty();
     console.log(cocktails)
