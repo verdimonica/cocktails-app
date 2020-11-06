@@ -62,7 +62,7 @@ class Signup {
         { 
             location.assign('index.html');
             document.querySelector('#success-signup').classList.add('no-display')
-        }, 2500);
+        }, 2000);
     }
     
     addListeners = () => {

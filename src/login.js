@@ -31,7 +31,7 @@ class Login {
         location.assign('search.html')
         document.querySelector('#success-login').classList.add('no-display')
         document.querySelector('#forgot').classList.remove('no-display')
-    }, 2500);
+    }, 2000);
   }
 }
 const login = new Login();
