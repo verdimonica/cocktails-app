@@ -1,71 +1,100 @@
 <!DOCTYPE html>
-​
+
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>MIX IT UP</title>
+        <title>MIXITUP Exclusive</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/searchresults.css">
-    </head>
-    <body class="flex-column">
-      <main class="flex-column occupy-space">
-        <!--LANDING-->
-      <div class="hero container occupy-space flex-column">
-​
-            <header>
-              <h2><a href="./index.html"><i class="Brand"></i> MIX IT UP</a></h2>
-              <nav>
-                <ul>
-                  <li>
-                    <a href="./about-us.html" title="About us">About us</a>
-                  </li>
-                  <li>
-                    <a class="btn" href="./login-signup.html" title="Register / Log In">Signup/Log In</a>
-                  </li>
-                </ul>
-              </nav>
-            </header>
-          
-            <div class="cover occupy-space">
-              <h1>Discover new flavors</h1>
-              <form  class="flex-form">
-                <input id="search-bar" class="shadow" type="search" placeholder="Type a cocktail name">
-                <input id="search-button" class="shadow" type="submit" value="Search">
-              </form>
-            </div>
-          
-      </div>
-      <div id="search-results" class="container occupy-space no-display">
-      <!-- Thumbs -->
-        <ul class="posts-box">
-        <!-- JSON Here! -->
-        </ul>
-​
-        <!-- Modal -->
-      <div class="modal" id="modal-name">
-        <div class="modal-sandbox"></div>
-        <div class="modal-box">
-          <div class="modal-header">
-            <img src="" class="inner-img" alt="">
-          </div>
-          <div class="modal-body">
-            <h2 class="inner-title"></h2>
-            <div class="inner-text"></div>
-            <button class="prev-post">Previous</button>
-            <button class="next-post">Next</button>
-            <button class="close-post">Close</button>
-          </div>
-        </div>
-      </div>
-​
-      </div>
-    </main>    
-        <script src="" async defer></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/signupstyles.css">
         <script src="./src/main.js"></script>
-        <script src="./src/searchresults.js"></script>
-  </body>
-</html>                         
+	</head>
+	<body class="flex-colum">
+		<main class="flex-column occupy-space background-gradient">
+			<header>
+				<h2><a href="./search.html"><i class="Brand"></i> MIX IT UP</a></h2>
+				<nav>
+				  <ul>
+					<li>
+					  <a href="./about-us.html" title="About us">About us</a>
+					</li>
+					<li>
+					  <a class="btn" href="./index.html" title="Register / Log In">Signup/Log In</a>
+					</li>
+				  </ul>
+				</nav>
+			</header>
+			<div class="login-wrap">
+				<div class="login-html" id="login-html">
+					<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+					<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+					<div class="login-form">
+						<div class="sign-in-htm">
+							<div class="group">
+								<label for="email" class="label">Your email</label>
+								<input id="email" type="text" class="input">
+							</div>
+							<div class="group">
+								<label for="password" class="label">Password</label>
+								<input id="password" type="password" class="input" data-type="password">
+							</div>
+							<div class="group">
+								<input id="check" type="checkbox" class="check" checked>
+								<label for="check"><span class="icon"></span> Keep me Signed in</label>
+							</div>
+							<div class="group">
+								<input id ="login-button" type="submit" class="button" value="Sign In">
+							</div>
+							<div class="hr"></div>
+							<div class="foot-lnk" id="forgot">
+								<a href="#forgot">Forgot Password?</a>
+							</div>
+							<div class="foot-lnk no-display success" id="success-login">
+								<label for="tab-1">Success</a>
+							</div>
+						</div>
+
+						
+						<div class="sign-up-htm">
+							<div class="group">
+								<label for="name-signup" class="label">First Name</label>
+								<input id="name-signup" type="text" class="input">
+							</div>
+							<div class="group">
+								<label for="password-signup" class="label">Password</label>
+								<input id="password-signup" type="password" class="input" data-type="password">
+							</div>
+							<div class="group">
+								<label for="repeat-password-signup" class="label">Repeat Password</label>
+								<input id="repeat-password-signup" type="password" class="input" data-type="password">
+							</div>
+							<div class="group">
+								<label for="email-signup" class="label">Email Address</label>
+								<input id="email-signup" type="text" class="input">
+							</div>
+							<div class="group">
+								<input id="signup-button" type="submit" class="button" value="Sign Up">
+							</div>
+							<div class="hr"></div>
+							<div class="foot-lnk">
+								<label for="tab-1" id="member">Already Member?</a>
+							</div>
+							<div class="foot-lnk no-display success" id="success-signup">
+								<label for="tab-1">Success</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>  
+		</main>
+		<script src="./src/loginsignup.js"></script>
+		<script src="./src/user.js"></script>
+		<script src="./src/database.js"></script>
+		<script src="./src/validator.js"></script>
+		<script src="./src/login.js"></script>
+		<script src="./src/signup.js"></script>
+
+	</body>
+</html>  
