@@ -154,6 +154,7 @@ main{
 	text-align:center;
 }
 .background-gradient{
+	
 	background:
 	linear-gradient(
 	  rgba(255, 0, 0, 0.336), 
@@ -168,4 +169,5 @@ main{
 	color: azure;
 	font-weight: bold;
 	font-size: xx-large
+	
 }

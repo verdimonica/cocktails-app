@@ -60,7 +60,7 @@ class Signup {
         document.querySelector('#member').classList.add('no-display')
         setTimeout(function()
         { 
-            location.assign('login-signup.html');
+            location.assign('index.html');
             document.querySelector('#success-signup').classList.add('no-display')
         }, 2500);
     }

@@ -59,6 +59,8 @@ h1 {
   font-weight: 700;
   color: #fff;
   margin: 0 0 1.5rem;
+  padding-bottom: 4%;
+  padding-top: 3.2%;
 }
 
 i {
@@ -197,9 +199,9 @@ input[type="search"] {
 
 #search-bar {
   border-radius: 100px;
-  margin-right: 2%;
+  margin-right: 3%;
   font-family: 'Lato', 'Open Sans', sans-serif;
-  color: #444444f3;
+  color: #444444f3; 
 }
 .shadow {
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);

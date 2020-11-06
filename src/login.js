@@ -28,7 +28,7 @@ class Login {
     document.querySelector('#success-login').classList.remove('no-display')
     document.querySelector('#forgot').classList.add('no-display')
     setTimeout( ()=> {
-        location.assign('index.html')
+        location.assign('search.html')
         document.querySelector('#success-login').classList.add('no-display')
         document.querySelector('#forgot').classList.remove('no-display')
     }, 2500);
